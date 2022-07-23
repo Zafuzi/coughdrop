@@ -22,13 +22,19 @@ Example:
 
 
 #### version notes
+v0.0.5
+- second attempt to auto import stylesheets
+- minor restyle to readme version notes
+
 v0.0.4
-    - attempt to auto import stylesheets    
+- attempt to auto import stylesheets
 
 v0.0.3
-    - added version control
-    - attempt to allow importing variables into other projects
+- added version control
+- attempt to allow importing variables into other projects
 
-v0.0.2 - minor bug fix with publishing
+v0.0.2
+- minor bug fix with publishing
 
-v0.0.1 - first publish
+v0.0.1
+- first publish
