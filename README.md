@@ -22,6 +22,10 @@ Example:
 
 
 #### version notes
-v0.0.3 -
-v0.0.2 - 
+v0.0.3
+    - added version control
+    - attempt to allow importing variables into other projects
+
+v0.0.2 - minor bug fix with publishing
+
 v0.0.1 - first publish
