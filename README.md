@@ -1,8 +1,6 @@
 # Coughdrop
 A light set of front end tools
 
------
-
 ## goals
 - stay light
 - only add what I need, when I need it
