@@ -22,6 +22,9 @@ Example:
 
 
 #### version notes
+v0.0.4
+    - attempt to auto import stylesheets    
+
 v0.0.3
     - added version control
     - attempt to allow importing variables into other projects
