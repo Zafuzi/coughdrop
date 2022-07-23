@@ -34,6 +34,9 @@ Example:
 
 
 #### version notes
+v1.0.1
+- patch to updated documentation on atmospherejs
+
 v1.0.0
 - updated readme to include how to import less variables
 - first release

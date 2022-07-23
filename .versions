@@ -16,4 +16,4 @@ modules-runtime@0.13.0
 promise@0.12.0
 random@1.2.0
 react-fast-refresh@0.2.3
-zfoutz:coughdrop@0.0.5
+zfoutz:coughdrop@1.0.0

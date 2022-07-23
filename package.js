@@ -1,8 +1,8 @@
 Package.describe({
   name: "zfoutz:coughdrop",
-  version: "1.0.0",
+  version: "1.0.1",
   summary: "A light set of front-end tools",
-  git: "https://github.com/Zafuzi/coughdrop",
+  git: "https://github.com/Zafuzi/coughdrop.git",
   documentation: "README.md"
 });
 
