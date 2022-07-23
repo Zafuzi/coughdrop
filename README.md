@@ -32,6 +32,9 @@ Example:
 
 
 #### version notes
+v1.0.2
+- attempt to lazy load less from package.js
+
 v1.0.1
 - patch to updated documentation on atmospherejs
 

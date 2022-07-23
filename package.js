@@ -1,6 +1,6 @@
 Package.describe({
   name: "zfoutz:coughdrop",
-  version: "1.0.1",
+  version: "1.0.2",
   summary: "A light set of front-end tools",
   git: "https://github.com/Zafuzi/coughdrop.git",
   documentation: "README.md"
@@ -18,7 +18,8 @@ Package.onUse(function(api) {
 		"stylesheets/fonts.import.less",
 		"stylesheets/general.import.less",
 		"stylesheets/buttons.import.less",
-	], "client", {isImport: true});
+		"stylesheets/coughdrop.less",
+	], "client", {lazy: true});
 });
 
 /*
