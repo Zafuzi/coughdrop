@@ -1,7 +1,7 @@
-# ENSO
+# Coughdrop
+A light set of front end tools
 
-## about
-Enso is a lightweight set of front end tools I use in my various projects.
+-----
 
 ## goals
 - stay light
