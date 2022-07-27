@@ -1,6 +1,6 @@
 Package.describe({
   name: "zfoutz:coughdrop",
-  version: "1.0.2",
+  version: "2.0.0",
   summary: "A light set of front-end tools",
   git: "https://github.com/Zafuzi/coughdrop.git",
   documentation: "README.md"
@@ -8,18 +8,25 @@ Package.describe({
 
 Package.onUse(function(api) {
 	api.versionsFrom("2.7.3");
-	api.use([
-		"ecmascript",
-		"less@3.0.0",
-	]);
+	
+	Npm.depends({
+		"postcss": "8.4.6",
+		"postcss-load-config": "3.1.1"
+	});
+	
+	api.use([ "ecmascript" ]);
+	
 	api.mainModule("coughdrop.js");
+	
+	/*
 	api.addFiles([
-		"stylesheets/variables.import.less",
-		"stylesheets/fonts.import.less",
-		"stylesheets/general.import.less",
-		"stylesheets/buttons.import.less",
-		"stylesheets/coughdrop.less",
-	], "client", {lazy: true});
+		"variables.import.pcss",
+		"fonts.import.pcss",
+		"general.import.pcss",
+		"buttons.import.pcss",
+		"coughdrop.pcss",
+	], "server", {lazy: true});
+	 */
 });
 
 /*

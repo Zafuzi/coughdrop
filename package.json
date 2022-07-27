@@ -1,0 +1,19 @@
+{
+  "name": "coughdrop",
+  "version": "2.0.0",
+  "description": "A light mixin library for common use variables",
+  "main": "coughdrop.pcss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zafuzi/coughdrop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zafuzi/coughdrop/issues"
+  },
+  "homepage": "https://github.com/zafuzi/coughdrop#readme"
+}

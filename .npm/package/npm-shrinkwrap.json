@@ -1,0 +1,40 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "lilconfig": {
+      "version": "2.0.6",
+      "resolved": "https://registry.npmjs.org/lilconfig/-/lilconfig-2.0.6.tgz",
+      "integrity": "sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg=="
+    },
+    "nanoid": {
+      "version": "3.3.4",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz",
+      "integrity": "sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw=="
+    },
+    "picocolors": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
+      "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ=="
+    },
+    "postcss": {
+      "version": "8.4.6",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.6.tgz",
+      "integrity": "sha512-OovjwIzs9Te46vlEx7+uXB0PLijpwjXGKXjVGGPIGubGpq7uh5Xgf6D6FiJ/SzJMBosHDp6a2hiXOS97iBXcaA=="
+    },
+    "postcss-load-config": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-3.1.1.tgz",
+      "integrity": "sha512-c/9XYboIbSEUZpiD1UQD0IKiUe8n9WHYV7YFe7X7J+ZwCsEKkUJSFWjS9hBU1RR9THR7jMXst8sxiqP0jjo2mg=="
+    },
+    "source-map-js": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz",
+      "integrity": "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw=="
+    },
+    "yaml": {
+      "version": "1.10.2",
+      "resolved": "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz",
+      "integrity": "sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg=="
+    }
+  }
+}
