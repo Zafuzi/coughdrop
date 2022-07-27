@@ -1,8 +1,8 @@
 {
   "name": "coughdrop",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A light mixin library for common use variables",
-  "main": "coughdrop.pcss",
+  "main": "coughdrop.less",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
