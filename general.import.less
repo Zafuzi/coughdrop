@@ -6,19 +6,52 @@
 	&-column {flex-flow: column;}
 	&-column-reverse {flex-direction: column-reverse;}
 }
-.grid {display: grid;}
+
+.grid {
+    --minimum-col-size: 100px;
+
+    display: grid;
+
+    &-col {
+        &-auto-fill {grid-template-columns: repeat(auto-fill, minmax(var(--minimum-col-size), 1fr));}
+        &-auto-fit {grid-template-columns: repeat(auto-fit, minmax(var(--minimum-col-size), 1fr));}
+        &-1 {grid-template-columns: 1fr;}
+        &-2 {grid-template-columns: repeat(2, minmax(var(--minimum-col-size), 1fr));}
+        &-3 {grid-template-columns: repeat(3, minmax(var(--minimum-col-size), 1fr));}
+        &-4 {grid-template-columns: repeat(4, minmax(var(--minimum-col-size), 1fr));}
+        &-5 {grid-template-columns: repeat(5, minmax(var(--minimum-col-size), 1fr));}
+        &-6 {grid-template-columns: repeat(6, minmax(var(--minimum-col-size), 1fr));}
+    }
+}
 
 .align {
-	&-center {align-items: center;}
-	&-start {align-items: flex-start;}
-	&-end {align-items: flex-end;}
+    &-center {align-items: center;}
+    &-start {align-items: start;}
+    &-end {align-items: end;}
+
+    &-self {
+        &-center {align-self: center;}
+        &-start {align-self: start;}
+        &-end {align-self: end;}
+    }
 }
 
 .justify {
-	&-center {justify-content: center;}
-	&-start {justify-content: flex-start;}
-	&-end {justify-content: flex-end;}
-	&-space-between {justify-content: space-between;}
+    &-center {justify-content: center;}
+    &-start {justify-content: start;}
+    &-end {justify-content: end;}
+    &-space-between {justify-content: space-between;}
+    &-space-around {justify-content: space-around;}
+    &-space-evenly {justify-content: space-evenly;}
+}
+
+.text {
+    &-center {text-align: center;}
+    &-end {text-align: end;}
+    &-left {text-align: left;}
+    &-right {text-align: right;}
+    &-start {text-align: start;}
+    &-justify {text-align: justify;}
 }
 
 /**
@@ -140,3 +173,5 @@
 .bg-light { background-color: var(--light); }
 .bg-dark { background-color: var(--dark); }
 .bg-darker { background-color: var(--darker); }
+
+.hid {display: none;}
