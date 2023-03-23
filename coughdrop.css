@@ -484,10 +484,6 @@
 }
 .button-energized {
   background-color: var(--energized);
-  color: var(--button-dark-text);
-}
-.button-energized {
-  background-color: var(--energized);
   color: var(--button-light-text);
 }
 .button-energized-ghost {
@@ -517,10 +513,6 @@
   background-color: var(--juicy);
   color: var(--button-light-text);
 }
-.button-juicy {
-  background-color: var(--juicy);
-  color: var(--button-light-text);
-}
 .button-juicy-ghost {
   color: var(--juicy);
   background-color: var(--lighter);
@@ -543,10 +535,6 @@
 .button-neutral-light {
   background-color: var(--neutral-light);
   color: var(--button-dark-text);
-}
-.button-neutral {
-  background-color: var(--neutral);
-  color: var(--button-light-text);
 }
 .button-neutral {
   background-color: var(--neutral);
