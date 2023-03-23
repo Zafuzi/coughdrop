@@ -32,5 +32,5 @@ Example:
 
 
 #### version notes (latest)
-v3.2.2
-* updated buttons styles to be more consistent with border colors
+v3.2.3
+* updated buttons to no longer force transparent to overwrite ghost
