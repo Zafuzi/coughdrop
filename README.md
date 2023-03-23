@@ -32,5 +32,6 @@ Example:
 
 
 #### version notes (latest)
-v3.1.3
-* turn neutral back to light text button
+v3.2.0
+* added grid and text alignment
+* extended align and justify classes
