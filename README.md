@@ -32,5 +32,5 @@ Example:
 
 
 #### version notes (latest)
-v3.2.1
-* added colored borders to buttons
+v3.2.2
+* updated buttons styles to be more consistent with border colors
