@@ -32,5 +32,5 @@ Example:
 
 
 #### version notes (latest)
-v3.1.2
+v3.1.3
 * turn neutral back to light text button
