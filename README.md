@@ -7,7 +7,7 @@ A light set of front end tools
 - keep it extensible
 
 ## usage
-You can import all of the variables and such in your less files using this statement
+You can import all the variables and such in your less files using this statement
 ```less
 @import "node_modules/coughdrop/stylesheets/coughdrop";
 ```
@@ -31,43 +31,6 @@ Example:
 ```
 
 
-#### version notes
-v3.1.0
-- removed all less variables in favor of css variables
-- added generated css file for those not wanting to use less
-
-v3.0.0
-- changed back to less and remove meteor crap
-
-v2.0.0
-- changed to postcss from less
-
-v1.0.3
-- attempt to use npm to load stylesheets from meteor package 
-
-v1.0.2
-- attempt to lazy load less from package.js
-
-v1.0.1
-- patch to updated documentation on atmospherejs
-
-v1.0.0
-- updated readme to include how to import less variables
-- first release
-
-v0.0.5
-- second attempt to auto import stylesheets
-- minor restyle to readme version notes
-
-v0.0.4
-- attempt to auto import stylesheets
-
-v0.0.3
-- added version control
-- attempt to allow importing variables into other projects
-
-v0.0.2
-- minor bug fix with publishing
-
-v0.0.1
-- first publish
+#### version notes (latest)
+v3.1.1
+- fixed neutral button text color being light instead of dark 
