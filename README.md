@@ -32,6 +32,5 @@ Example:
 
 
 #### version notes (latest)
-v3.2.0
-* added grid and text alignment
-* extended align and justify classes
+v3.2.1
+* added colored borders to buttons

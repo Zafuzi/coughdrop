@@ -73,28 +73,86 @@
   flex-direction: column-reverse;
 }
 .grid {
+  --minimum-col-size: 100px;
   display: grid;
+}
+.grid-col-auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(var(--minimum-col-size), 1fr));
+}
+.grid-col-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(var(--minimum-col-size), 1fr));
+}
+.grid-col-1 {
+  grid-template-columns: 1fr;
+}
+.grid-col-2 {
+  grid-template-columns: repeat(2, minmax(var(--minimum-col-size), 1fr));
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, minmax(var(--minimum-col-size), 1fr));
+}
+.grid-col-4 {
+  grid-template-columns: repeat(4, minmax(var(--minimum-col-size), 1fr));
+}
+.grid-col-5 {
+  grid-template-columns: repeat(5, minmax(var(--minimum-col-size), 1fr));
+}
+.grid-col-6 {
+  grid-template-columns: repeat(6, minmax(var(--minimum-col-size), 1fr));
 }
 .align-center {
   align-items: center;
 }
 .align-start {
-  align-items: flex-start;
+  align-items: start;
 }
 .align-end {
-  align-items: flex-end;
+  align-items: end;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-start {
+  align-self: start;
+}
+.align-self-end {
+  align-self: end;
 }
 .justify-center {
   justify-content: center;
 }
 .justify-start {
-  justify-content: flex-start;
+  justify-content: start;
 }
 .justify-end {
-  justify-content: flex-end;
+  justify-content: end;
 }
 .justify-space-between {
   justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-start {
+  text-align: start;
+}
+.text-justify {
+  text-align: justify;
 }
 /**
 	For use with flexbox and grid layouts
@@ -374,6 +432,9 @@
 .bg-darker {
   background-color: var(--darker);
 }
+.hid {
+  display: none;
+}
 :root {
   --button-light-text: var(--lighter);
   --button-dark-text: var(--darker);
@@ -382,7 +443,7 @@
   font-size: 12pt;
   color: var(--dark);
   background-color: var(--neutral-lighter);
-  border: 2px solid hsla(0, 0%, 10%, 0.2);
+  border: 2px solid var(--neutral-light);
   border-radius: 5px;
   font-weight: 600;
   text-decoration: none;
@@ -408,6 +469,7 @@
 .button-positive-ghost {
   color: var(--positive);
   background-color: var(--lighter);
+  border: 2px solid var(--positive);
 }
 .button-positive-ghost-transparent {
   background-color: transparent;
@@ -435,6 +497,7 @@
 .button-balanced-ghost {
   color: var(--balanced);
   background-color: var(--lighter);
+  border: 2px solid var(--balanced);
 }
 .button-balanced-ghost-transparent {
   background-color: transparent;
@@ -462,6 +525,7 @@
 .button-assertive-ghost {
   color: var(--assertive);
   background-color: var(--lighter);
+  border: 2px solid var(--assertive);
 }
 .button-assertive-ghost-transparent {
   background-color: transparent;
@@ -489,6 +553,7 @@
 .button-energized-ghost {
   color: var(--energized);
   background-color: var(--lighter);
+  border: 2px solid var(--energized);
 }
 .button-energized-ghost-transparent {
   background-color: transparent;
@@ -516,6 +581,7 @@
 .button-juicy-ghost {
   color: var(--juicy);
   background-color: var(--lighter);
+  border: 2px solid var(--juicy);
 }
 .button-juicy-ghost-transparent {
   background-color: transparent;
@@ -543,6 +609,7 @@
 .button-neutral-ghost {
   color: var(--neutral);
   background-color: var(--lighter);
+  border: 2px solid var(--neutral);
 }
 .button-neutral-ghost-transparent {
   background-color: transparent;
