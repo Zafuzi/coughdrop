@@ -541,7 +541,7 @@
 }
 .button-energized {
   background-color: var(--energized);
-  color: var(--button-light-text);
+  color: var(--button-dark-text);
   border: 2px solid var(--energized);
 }
 .button-energized-lighter {

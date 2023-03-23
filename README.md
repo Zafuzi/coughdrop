@@ -32,5 +32,5 @@ Example:
 
 
 #### version notes (latest)
-v3.2.3
-* updated buttons to no longer force transparent to overwrite ghost
+v3.2.4
+* updated energized buttons to default to dark text
