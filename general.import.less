@@ -1,50 +1,24 @@
-@import "variables.import.less";
-
 .flex {
 	display: flex;
-	&-row-wrap {
-		flex-flow: row wrap;
-	}
-	&-row-nowrap {
-		flex-flow: row nowrap;
-	}
-	&-row-reverse {
-		flex-direction: row-reverse;
-	}
-	&-column {
-		flex-flow: column;
-	}
-	&-column-reverse {
-		flex-direction: column-reverse;
-	}
+	&-row-wrap {flex-flow: row wrap;}
+	&-row-nowrap {flex-flow: row nowrap;}
+	&-row-reverse {flex-direction: row-reverse;}
+	&-column {flex-flow: column;}
+	&-column-reverse {flex-direction: column-reverse;}
 }
 .grid {display: grid;}
 
 .align {
-	&-center {
-		align-items: center;
-	}
-	&-start {
-		align-items: flex-start;
-	}
-	&-end {
-		align-items: flex-end;
-	}
+	&-center {align-items: center;}
+	&-start {align-items: flex-start;}
+	&-end {align-items: flex-end;}
 }
 
 .justify {
-	&-center {
-		justify-content: center;
-	}
-	&-start {
-		justify-content: flex-start;
-	}
-	&-end {
-		justify-content: flex-end;
-	}
-	&-space-between {
-		justify-content: space-between;
-	}
+	&-center {justify-content: center;}
+	&-start {justify-content: flex-start;}
+	&-end {justify-content: flex-end;}
+	&-space-between {justify-content: space-between;}
 }
 
 /**
@@ -97,72 +71,72 @@
 	&-italic { font-style: italic; }
 }
 
-.positive-lighter { color: @positive-lighter; }
-.positive-light { color: @positive-light; }
-.positive { color: @positive; }
-.positive-dark { color: @positive-dark; }
-.positive-darker { color: @positive-darker; }
+.positive-lighter { color: var(--positive-lighter); }
+.positive-light { color: var(--positive-light); }
+.positive { color: var(--positive); }
+.positive-dark { color: var(--positive-dark); }
+.positive-darker { color: var(--positive-darker); }
 
-.balanced-lighter { color: @balanced-lighter; }
-.balanced-light { color: @balanced-light; }
-.balanced { color: @balanced; }
-.balanced-dark { color: @balanced-dark; }
-.balanced-darker { color: @balanced-darker; }
+.balanced-lighter { color: var(--balanced-lighter); }
+.balanced-light { color: var(--balanced-light); }
+.balanced { color: var(--balanced); }
+.balanced-dark { color: var(--balanced-dark); }
+.balanced-darker { color: var(--balanced-darker); }
 
-.assertive-lighter { color: @assertive-lighter; }
-.assertive-light { color: @assertive-light; }
-.assertive { color: @assertive; }
-.assertive-dark { color: @assertive-dark; }
-.assertive-darker { color: @assertive-darker; }
+.assertive-lighter { color: var(--assertive-lighter); }
+.assertive-light { color: var(--assertive-light); }
+.assertive { color: var(--assertive); }
+.assertive-dark { color: var(--assertive-dark); }
+.assertive-darker { color: var(--assertive-darker); }
 
-.energized-lighter { color: @energized-lighter; }
-.energized-light { color: @energized-light; }
-.energized { color: @energized; }
-.energized-dark { color: @energized-dark; }
-.energized-darker { color: @energized-darker; }
+.energized-lighter { color: var(--energized-lighter); }
+.energized-light { color: var(--energized-light); }
+.energized { color: var(--energized); }
+.energized-dark { color: var(--energized-dark); }
+.energized-darker { color: var(--energized-darker); }
 
-.juicy-lighter { color: @juicy-lighter; }
-.juicy-light { color: @juicy-light; }
-.juicy { color: @juicy; }
-.juicy-dark { color: @juicy-dark; }
-.juicy-darker { color: @juicy-darker; }
+.juicy-lighter { color: var(--juicy-lighter); }
+.juicy-light { color: var(--juicy-light); }
+.juicy { color: var(--juicy); }
+.juicy-dark { color: var(--juicy-dark); }
+.juicy-darker { color: var(--juicy-darker); }
 
-.lighter { color: @lighter; }
-.light { color: @light; }
-.dark { color: @dark; }
-.darker { color: @darker; }
+.lighter { color: var(--lighter); }
+.light { color: var(--light); }
+.dark { color: var(--dark); }
+.darker { color: var(--darker); }
 
-.bg-positive-lighter { background-color: @positive-lighter; }
-.bg-positive-light { background-color: @positive-light; }
-.bg-positive { background-color: @positive; }
-.bg-positive-dark { background-color: @positive-dark; }
-.bg-positive-darker { background-color: @positive-darker; }
+.bg-positive-lighter { background-color: var(--positive-lighter); }
+.bg-positive-light { background-color: var(--positive-light); }
+.bg-positive { background-color: var(--positive); }
+.bg-positive-dark { background-color: var(--positive-dark); }
+.bg-positive-darker { background-color: var(--positive-darker); }
 
-.bg-balanced-lighter { background-color: @balanced-lighter; }
-.bg-balanced-light { background-color: @balanced-light; }
-.bg-balanced { background-color: @balanced; }
-.bg-balanced-dark { background-color: @balanced-dark; }
-.bg-balanced-darker { background-color: @balanced-darker; }
+.bg-balanced-lighter { background-color: var(--balanced-lighter); }
+.bg-balanced-light { background-color: var(--balanced-light); }
+.bg-balanced { background-color: var(--balanced); }
+.bg-balanced-dark { background-color: var(--balanced-dark); }
+.bg-balanced-darker { background-color: var(--balanced-darker); }
 
-.bg-assertive-lighter { background-color: @assertive-lighter; }
-.bg-assertive-light { background-color: @assertive-light; }
-.bg-assertive { background-color: @assertive; }
-.bg-assertive-dark { background-color: @assertive-dark; }
-.bg-assertive-darker { background-color: @assertive-darker; }
+.bg-assertive-lighter { background-color: var(--assertive-lighter); }
+.bg-assertive-light { background-color: var(--assertive-light); }
+.bg-assertive { background-color: var(--assertive); }
+.bg-assertive-dark { background-color: var(--assertive-dark); }
+.bg-assertive-darker { background-color: var(--assertive-darker); }
 
-.bg-energized-lighter { background-color: @energized-lighter; }
-.bg-energized-light { background-color: @energized-light; }
-.bg-energized { background-color: @energized; }
-.bg-energized-dark { background-color: @energized-dark; }
-.bg-energized-darker { background-color: @energized-darker; }
+.bg-energized-lighter { background-color: var(--energized-lighter); }
+.bg-energized-light { background-color: var(--energized-light); }
+.bg-energized { background-color: var(--energized); }
+.bg-energized-dark { background-color: var(--energized-dark); }
+.bg-energized-darker { background-color: var(--energized-darker); }
 
-.bg-juicy-lighter { background-color: @juicy-lighter; }
-.bg-juicy-light { background-color: @juicy-light; }
-.bg-juicy { background-color: @juicy; }
-.bg-juicy-dark { background-color: @juicy-dark; }
-.bg-juicy-darker { background-color: @juicy-darker; }
+.bg-juicy-lighter { background-color: var(--juicy-lighter); }
+.bg-juicy-light { background-color: var(--juicy-light); }
+.bg-juicy { background-color: var(--juicy); }
+.bg-juicy-dark { background-color: var(--juicy-dark); }
+.bg-juicy-darker { background-color: var(--juicy-darker); }
 
-.bg-lighter { background-color: @lighter; }
-.bg-light { background-color: @light; }
-.bg-dark { background-color: @dark; }
-.bg-darker { background-color: @darker; }
+.bg-lighter { background-color: var(--lighter); }
+.bg-light { background-color: var(--light); }
+.bg-dark { background-color: var(--dark); }
+.bg-darker { background-color: var(--darker); }

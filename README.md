@@ -32,6 +32,10 @@ Example:
 
 
 #### version notes
+v3.1.0
+- removed all less variables in favor of css variables
+- added generated css file for those not wanting to use less
+
 v3.0.0
 - changed back to less and remove meteor crap
 
