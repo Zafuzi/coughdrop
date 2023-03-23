@@ -32,5 +32,5 @@ Example:
 
 
 #### version notes (latest)
-v3.1.1
-- fixed neutral button text color being light instead of dark 
+v3.1.2
+* turn neutral back to light text button
