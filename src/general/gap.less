@@ -1,0 +1,19 @@
+.generate-gaps(@n, @i: 1) when (@i =< @n) {
+	@size: pow(2, @i);
+
+	.gap-@{size} {
+		gap: @size * 1px;
+	}
+
+	.gap-x-@{size} {
+		column-gap: @size * 1px;
+	}
+
+	.gap-y-@{size} {
+		row-gap: @size * 1px;
+	}
+
+	.generate-gaps(@n, (@i + 1));
+}
+
+.generate-gaps(4);

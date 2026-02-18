@@ -1,0 +1,37 @@
+.generate-margin(@n, @i: 1) when (@i =< @n) {
+	@size: @i * 4;
+
+	.margin-@{size} {
+		margin: @size * 1px;
+	}
+
+	.margin-x-@{size} {
+		margin-left: @size * 1px;
+		margin-right: @size * 1px;
+	}
+
+	.margin-y-@{size} {
+		margin-top: @size * 1px;
+		margin-bottom: @size * 1px;
+	}
+
+	.margin-top-@{size} {
+		margin-top: @size * 1px;
+	}
+
+	.margin-left-@{size} {
+		margin-left: @size * 1px;
+	}
+
+	.margin-right-@{size} {
+		margin-right: @size * 1px;
+	}
+
+	.margin-bottom-@{size} {
+		margin-bottom: @size * 1px;
+	}
+
+	.generate-margin(@n, (@i + 1));
+}
+
+.generate-margin(5);

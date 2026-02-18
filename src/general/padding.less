@@ -1,0 +1,37 @@
+.generate-padding(@n, @i: 1) when (@i =< @n) {
+	@size: @i * 4;
+
+	.padding-@{size} {
+		padding: @size * 1px;
+	}
+
+	.padding-x-@{size} {
+		padding-left: @size * 1px;
+		padding-right: @size * 1px;
+	}
+
+	.padding-y-@{size} {
+		padding-top: @size * 1px;
+		padding-bottom: @size * 1px;
+	}
+
+	.padding-top-@{size} {
+		padding-top: @size * 1px;
+	}
+
+	.padding-left-@{size} {
+		padding-left: @size * 1px;
+	}
+
+	.padding-right-@{size} {
+		padding-right: @size * 1px;
+	}
+
+	.padding-bottom-@{size} {
+		padding-bottom: @size * 1px;
+	}
+
+	.generate-padding(@n, (@i + 1));
+}
+
+.generate-padding(5);

@@ -1,0 +1,31 @@
+.grid {
+  --minimum-col-size: 100px;
+  display: grid;
+}
+.grid.col-auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(var(--minimum-col-size), 1fr));
+}
+.grid.col-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(var(--minimum-col-size), 1fr));
+}
+.grid.col-1 {
+  grid-template-columns: 1fr;
+}
+.grid.col-2 {
+  grid-template-columns: repeat(2, minmax(var(--minimum-col-size), 1fr));
+}
+.grid.col-3 {
+  grid-template-columns: repeat(3, minmax(var(--minimum-col-size), 1fr));
+}
+.grid.col-4 {
+  grid-template-columns: repeat(4, minmax(var(--minimum-col-size), 1fr));
+}
+.grid.col-5 {
+  grid-template-columns: repeat(5, minmax(var(--minimum-col-size), 1fr));
+}
+.grid.col-6 {
+  grid-template-columns: repeat(6, minmax(var(--minimum-col-size), 1fr));
+}
+.grid-fill {
+  grid-column: 1/-1;
+}

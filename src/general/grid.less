@@ -1,0 +1,39 @@
+.grid {
+	display: grid;
+
+	&.col-auto-fill {
+		grid-template-columns: repeat(auto-fill, minmax(@min-col-size, 1fr));
+	}
+
+	&.col-auto-fit {
+		grid-template-columns: repeat(auto-fit, minmax(@min-col-size, 1fr));
+	}
+
+	&.col-1 {
+		grid-template-columns: 1fr;
+	}
+
+	&.col-2 {
+		grid-template-columns: repeat(2, minmax(@min-col-size, 1fr));
+	}
+
+	&.col-3 {
+		grid-template-columns: repeat(3, minmax(@min-col-size, 1fr));
+	}
+
+	&.col-4 {
+		grid-template-columns: repeat(4, minmax(@min-col-size, 1fr));
+	}
+
+	&.col-5 {
+		grid-template-columns: repeat(5, minmax(@min-col-size, 1fr));
+	}
+
+	&.col-6 {
+		grid-template-columns: repeat(6, minmax(@min-col-size, 1fr));
+	}
+
+	&-fill {
+		grid-column: ~"1/-1";
+	}
+}
