@@ -1,6 +1,6 @@
 {
 	"name": "coughdrop",
-	"version": "4.0.0",
+	"version": "4.1.0",
 	"description": "A light mixin library for common use variables",
 	"main": "compile.ts",
 	"type": "module",
