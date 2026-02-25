@@ -1,11 +1,13 @@
+@import "../variables.less";
+
 .button {
 	font-size: 12pt;
 
-	color: var(--dark);
-	background-color: var(--neutral-lighter);
+	background-color: @dark;
+	color: @light;
 
 	border: 2px solid transparent;
-	border-radius: 5px;
+	border-radius: @button-radius;
 
 	font-weight: 600;
 	text-decoration: none;
@@ -13,13 +15,13 @@
 	min-width: 24px;
 	min-height: 24px;
 
-	@media (max-width: @tablet) {
+	@media (max-width: @sizes[mobile]) {
 		min-width: 44px;
 		min-height: 44px;
 	}
 
 	cursor: pointer;
-	padding: 0.6rem 1.2rem;
+	padding: @button-padding;
 
 	&:active {
 		transform: scale(0.99);
@@ -29,219 +31,18 @@
 		opacity: 0.8;
 	}
 
-	&-positive {
-		background-color: var(--positive);
-		color: var(--button-light-text);
-		border: 2px solid var(--positive);
-
-		&.lighter {
-			background-color: var(--positive-lighter);
-			color: var(--button-dark-text);
-		}
-
-		&.light {
-			background-color: var(--positive-light);
-			color: var(--button-dark-text);
-		}
-
-		&.dark {
-			background-color: var(--positive-dark);
-			color: var(--button-light-text);
-		}
-
-		&.darker {
-			background-color: var(--positive-darker);
-			color: var(--button-light-text);
-		}
-
-		&.ghost {
-			background-color: var(--lighter);
-			color: var(--positive);
-		}
-
-		&.transparent {
-			background-color: transparent;
-			color: var(--positive);
-		}
+	&-primary {
+		background-color: @primary;
+		.on-primary;
 	}
 
-	&-balanced {
-		background-color: var(--balanced);
-		color: var(--button-light-text);
-		border: 2px solid var(--balanced);
-
-		&.lighter {
-			background-color: var(--balanced-lighter);
-			color: var(--button-dark-text);
-		}
-
-		&.light {
-			background-color: var(--balanced-light);
-			color: var(--button-dark-text);
-		}
-
-		&.dark {
-			background-color: var(--balanced-dark);
-			color: var(--button-light-text);
-		}
-
-		&.darker {
-			background-color: var(--balanced-darker);
-			color: var(--button-light-text);
-		}
-
-		&.ghost {
-			color: var(--balanced);
-			background-color: var(--lighter);
-		}
-
-		&.transparent {
-			color: var(--balanced);
-			background-color: transparent;
-		}
+	&-secondary {
+		background-color: @secondary;
+		.on-secondary;
 	}
 
-	&-assertive {
-		background-color: var(--assertive);
-		color: var(--button-light-text);
-		border: 2px solid var(--assertive);
-
-		&.lighter {
-			background-color: var(--assertive-lighter);
-			color: var(--button-dark-text);
-		}
-
-		&.light {
-			background-color: var(--assertive-light);
-			color: var(--button-dark-text);
-		}
-
-		&.dark {
-			background-color: var(--assertive-dark);
-			color: var(--button-light-text);
-		}
-
-		&.darker {
-			background-color: var(--assertive-darker);
-			color: var(--button-light-text);
-		}
-
-		&.ghost {
-			color: var(--assertive);
-			background-color: var(--lighter);
-		}
-
-		&.transparent {
-			color: var(--assertive);
-			background-color: transparent;
-		}
-	}
-
-	&-energized {
-		background-color: var(--energized);
-		color: var(--button-dark-text);
-		border: 2px solid var(--energized);
-
-		&.lighter {
-			background-color: var(--energized-lighter);
-			color: var(--button-dark-text);
-		}
-
-		&.light {
-			background-color: var(--energized-light);
-			color: var(--button-dark-text);
-		}
-
-		&.dark {
-			background-color: var(--energized-dark);
-			color: var(--button-light-text);
-		}
-
-		&.darker {
-			background-color: var(--energized-darker);
-			color: var(--button-light-text);
-		}
-
-		&.ghost {
-			color: var(--energized);
-			background-color: var(--lighter);
-		}
-
-		&.transparent {
-			color: var(--energized);
-			background-color: transparent;
-		}
-	}
-
-	&-juicy {
-		background-color: var(--juicy);
-		color: var(--button-light-text);
-		border: 2px solid var(--juicy);
-
-		&.lighter {
-			background-color: var(--juicy-lighter);
-			color: var(--button-dark-text);
-		}
-
-		&.light {
-			background-color: var(--juicy-light);
-			color: var(--button-dark-text);
-		}
-
-		&.dark {
-			background-color: var(--juicy-dark);
-			color: var(--button-light-text);
-		}
-
-		&.darker {
-			background-color: var(--juicy-darker);
-			color: var(--button-light-text);
-		}
-
-		&.ghost {
-			color: var(--juicy);
-			background-color: var(--lighter);
-		}
-
-		&.transparent {
-			color: var(--juicy);
-			background-color: transparent;
-		}
-	}
-
-	&-neutral {
-		background-color: var(--neutral);
-		color: var(--button-light-text);
-		border: 2px solid var(--neutral);
-
-		&.lighter {
-			background-color: var(--neutral-lighter);
-			color: var(--button-dark-text);
-		}
-
-		&.light {
-			background-color: var(--neutral-light);
-			color: var(--button-dark-text);
-		}
-
-		&.dark {
-			background-color: var(--neutral-dark);
-			color: var(--button-light-text);
-		}
-
-		&.darker {
-			background-color: var(--neutral-darker);
-			color: var(--button-light-text);
-		}
-
-		&.ghost {
-			color: var(--neutral);
-			background-color: var(--lighter);
-		}
-
-		&.transparent {
-			color: var(--neutral);
-			background-color: transparent;
-		}
+	&-danger {
+		background-color: @error;
+		.on-error;
 	}
 }

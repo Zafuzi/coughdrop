@@ -1,0 +1,210 @@
+@import "../variables.less";
+
+.input:not([type="range"], [type="color"]) {
+	background-color: @light;
+	color: @secondary;
+
+	padding: @input-padding;
+	border-radius: @input-radius;
+
+	border: 2px solid @secondary;
+
+	min-width: 44px;
+	min-height: 24px;
+
+	opacity: 0.8;
+
+
+	@media(max-width: @sizes[mobile]) {
+		min-height: 44px;
+	}
+
+	&:focus, &:hover, &:not(:placeholder-shown) {
+		outline: none;
+		opacity: 1;
+		color: @dark;
+		border-color: @secondary;
+	}
+
+	&::placeholder {
+		color: @secondary;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+	}
+}
+
+.slideContainer {
+	width: 100%;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 12px;
+	background: var(--secondary);
+	outline: none;
+	opacity: 0.8;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	border-radius: @input-radius;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	background: var(--primary);
+	cursor: pointer;
+	border-radius: @input-radius;
+}
+
+.slider::-moz-range-thumb {
+	width: 24px;
+	height: 24px;
+	background: var(--primary);
+	cursor: pointer;
+	border-radius: @input-radius;
+}
+
+
+/* The checkboxContainer */
+.checkboxContainer {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 24px;
+		width: 24px;
+		background-color: var(--secondary);
+		border: 2px solid var(--secondary);
+		border-radius: 5px;
+		opacity: 0.8;
+		transition: opacity 0.2s ease-in-out;
+	}
+
+	&:hover input ~ .checkmark {
+		background-color: var(--secondary);
+		opacity: 1;
+	}
+
+	input:checked ~ .checkmark {
+		background-color: var(--primary);
+	}
+
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	.checkmark:after {
+		left: 6px;
+		top: 3px;
+		width: 5px;
+		height: 10px;
+		border: solid var(--light);
+		border-width: 0 3px 3px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
+
+.radioContainer {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 24px;
+		width: 24px;
+		background-color: var(--secondary);
+		border: 2px solid var(--secondary);
+		border-radius: 50%;
+		opacity: 0.8;
+		transition: opacity 0.2s ease-in-out;
+	}
+
+	&:hover input ~ .checkmark {
+		background-color: var(--secondary);
+		opacity: 1;
+	}
+
+	input:checked ~ .checkmark {
+		background-color: var(--primary);
+	}
+
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	.checkmark:after {
+		height: 8px;
+		width: 8px;
+		background-color: var(--light);
+		border-radius: 50%;
+		top: 6px;
+		left: 6px;
+	}
+}
+
+
+fieldset {
+	border: 1px solid var(--dark);
+	border-radius: @input-radius;
+	padding: @input-padding;
+	margin: 0;
+}

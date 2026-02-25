@@ -1,0 +1,11 @@
+#contrast(@color, @property: color, @threshold: 36, @dark-color: @dark, @light-color: @light, @more: ~'') {
+	@contrast: unit(luma(@color));
+
+	& when (@contrast > @threshold) {
+		@{property}: @dark-color@more;
+	}
+
+	& when not (@contrast > @threshold) {
+		@{property}: @light-color@more;
+	}
+}

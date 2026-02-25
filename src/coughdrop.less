@@ -1,19 +1,26 @@
 @import "variables.less";
-@import "general/css_variables.less";
-@import "general/sizing.less";
 @import "general/fonts.less";
-@import "general/colors.less";
-@import "general/padding.less";
-@import "general/margin.less";
-@import "general/flex.less";
-@import "general/gap.less";
-@import "general/grid.less";
 
-@import "components/buttons.less";
+@import "general/margin.less";
+@import "general/padding.less";
+
+@import "general/flex.less";
+@import "general/grid.less";
+@import "general/gap.less";
+
+@import "general/sizing.less";
+
 @import "components/container.less";
+@import "components/buttons.less";
+@import "components/input.less";
 
 * {
 	box-sizing: border-box;
+}
+
+:root {
+	--primary: @primary;
+	--secondary: @secondary;
 }
 
 body,
@@ -32,4 +39,7 @@ html {
 
 	margin: 0;
 	padding: 0;
+
+	background-color: var(--light);
+	color: var(--dark);
 }

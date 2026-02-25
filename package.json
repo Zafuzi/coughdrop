@@ -5,6 +5,8 @@
 	"main": "compile.ts",
 	"type": "module",
 	"scripts": {
+		"dev": "npx watch 'npm run compile'",
+		"serve": "npx serve",
 		"compile": "ts-node compile.ts",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -28,5 +30,8 @@
 		"node-fs": "^0.1.7",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"coughdrop": "^4.1.0"
 	}
 }

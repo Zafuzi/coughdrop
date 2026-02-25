@@ -1,7 +1,69 @@
-@mobile: 500px;
-@tablet: 700px;
-@desktop: 900px;
-@desktop-wide: 1200px;
-@desktop-ultrawide: 1600px;
+@import "./general/contrast.less";
+
+// colors
+@light: #FEFAEF;
+@dark: #302424;
+@primary: #FB8149;
+@secondary: #7D644F;
+@error: #B00020;
+@background: @light;
+@surface: @light;
+
+// padding and margins
+@input-padding: 0.5rem 1rem;
+@button-padding: 0.6rem 1.2rem;
+
+// borders
+@input-radius: 1vw;
+@button-radius: 1vw;
+
+:root[data-theme="light"] {
+	--dark: @dark;
+	--light: @light;
+	--primary: @primary;
+	--secondary: @secondary;
+	--error: @error;
+	--background: @light;
+	--surface: @light;
+}
+
+:root[data-theme="dark"] {
+	--dark: @light;
+	--light: @dark;
+	--primary: @primary;
+	--secondary: @secondary;
+	--error: @error;
+	--background: @dark;
+	--surface: @dark;
+}
+
+.on-primary {
+	#contrast(@color: @primary);
+}
+
+.on-secondary {
+	#contrast(@color: @secondary);
+}
+
+.on-background {
+	#contrast(@color: @background; @dark-color: @dark; @light-color: @light);
+}
+
+.on-surface {
+	#contrast(@color: @surface);
+}
+
+.on-error {
+	#contrast(@color: @error);
+}
+
+@sizes: {
+	mobile: 500px;
+	tablet: 700px;
+	desktop: 900px;
+	desktop-wide: 1200px;
+	desktop-ultrawide: 1600px;
+}
+
 
 @min-col-size: 100px;
